@@ -18,23 +18,16 @@ let person3 =
     ]
 }
 
-for(let i = 0; i < Object.keys(person3).length; i++)
-{
-    if(Array.isArray(Object.values(person3)[i]))
-    {
-        console.log(Object.values(person3)[i])
-    }
-}
+console.log("My favorite pizzas are " + person3.pizza[0] + " and " + person3.pizza[1] + ".")
 
-console.log(person3.tacos)
-console.log(person3.burgers)
+console.log("I like tacos as long they're " + person3.tacos + ".")
 
-shakesArray = person3.shakes
+console.log("I love burgers from " + person3.burgers + ".")
 
-for(let i = 0; i < Object.values(shakesArray).length; i++)
-{
-    console.log(Object.values(shakesArray)[i])
-}
+console.log("My favorite ice creams are " + person3.ice_cream[0] + ", " + person3.ice_cream[1] + ", and " + person3.ice_cream[2] + ".")
+
+console.log("My favorite shake parlors are " + Object.keys(person3.shakes[0]) + " and for each parlor respectively, I like " + Object.values(person3.shakes[0]) + " shakes.")
+
 
 //Exercise #2:
 
